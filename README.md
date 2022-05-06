@@ -1,9 +1,25 @@
-# Getting started with REST API testing with Serenity and Cucumber 6
+# Getting Started
 
-This is a simple starter project for Serenity with Cucumber 6 and RestAssured
+## Prerequisites
 
-## Want to learn more?
-For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
-* **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks about Serenity BDD
-* [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
-* [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
+* Maven 3.6+
+* Java 11+
+
+## Test execution
+
+* Open a command prompt
+* Change to this directory
+* Enter the following command
+
+        mvn clean verify
+
+If you are behind a corporate proxy add the following arguments (adjust to your proxy settings):
+
+        mvn -Dhttps.proxyHost=localhost -Dhttps.proxyPort=3128 -Dhttp.proxyHost=localhost -Dhttp.proxyPort=3128 clean verify
+
+## View test resuls
+
+* The report with the results is generated in the sub folder
+
+        ./target/site/serenity
+* Open the file _index.html_ in a browser to access it
